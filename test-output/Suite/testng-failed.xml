@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="rooms" value="2"/>
+    <parameter name="url" value="https://adactinhotelapp.com/"/>
+    <parameter name="droptype" value="value"/>
+    <parameter name="roomtype" value="Super Deluxe"/>
+    <parameter name="password" value="9876543210"/>
+    <parameter name="checkIn" value="12/05/2022"/>
+    <parameter name="children" value="0"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="hotel" value="Hotel Sunshine"/>
+    <parameter name="location" value="Paris"/>
+    <parameter name="checkOut" value="13/05/2022"/>
+    <parameter name="adult" value="2"/>
+    <parameter name="username" value="nithinraje"/>
+    <classes>
+      <class name="com.execution.MainClass">
+        <methods>
+          <include name="launch"/>
+          <include name="selectHotel"/>
+          <include name="login"/>
+          <include name="address"/>
+          <include name="searchHotel"/>
+        </methods>
+      </class> <!-- com.execution.MainClass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
